@@ -6,7 +6,7 @@
   "VersionName": "1.0",
   "CreatedBy": "Razer, Inc.",
   "CreatedByURL": "https://github.com/razerofficial/UE4_XDK_SampleApp",
-  "EngineVersion": "4.21.0",
+  "EngineVersion": "5.0.0",
   "Description": "Plugin for Chroma",
   "Category": "Other",
   "EnabledByDefault": true,
