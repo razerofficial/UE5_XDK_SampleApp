@@ -2,7 +2,9 @@
 
 * Note: Visit the [Chroma Animation Guide](https://chroma.razer.com/ChromaGuide/) to find the latest supported plugin for Chroma RGB.
 
-* Note: This is the current Chroma SDK supported plugin for UE4.
+* Note: This repository is in progress upgrading from UE4 to UE5.
+
+* Note: This is the (NOT yet the) current Chroma SDK supported plugin for UE5.
 
 * Note: This version includes Unicode support for paths with special characters.
 
