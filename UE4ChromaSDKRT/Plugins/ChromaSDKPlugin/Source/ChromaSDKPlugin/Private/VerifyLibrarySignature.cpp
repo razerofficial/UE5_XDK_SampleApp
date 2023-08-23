@@ -30,14 +30,14 @@ namespace ChromaSDK
 {
 
 	// Source: https://docs.microsoft.com/en-us/windows/desktop/seccrypto/example-c-program--verifying-the-signature-of-a-pe-file
-	BOOL VerifyLibrarySignature::VerifyModule(const std::wstring& filename)
+	bool VerifyLibrarySignature::VerifyModule(const std::wstring& filename)
 	{
 		return IsFileSigned(filename.c_str());
 	}
 
-	BOOL VerifyLibrarySignature::IsFileSignedByRazer(const wchar_t* szFileName)
+	bool VerifyLibrarySignature::IsFileSignedByRazer(const wchar_t* szFileName)
 	{
-		BOOL bResult = FALSE;
+		bool bResult = FALSE;
 
 		// File is signed, lets check the whos the certificate is issue to.
 		HCERTSTORE hStore = NULL;
@@ -135,7 +135,7 @@ namespace ChromaSDK
 		return bResult;
 	}
 
-	BOOL VerifyLibrarySignature::IsFileSigned(const wchar_t* szFileName)
+	bool VerifyLibrarySignature::IsFileSigned(const wchar_t* szFileName)
 	{
 		BOOL bResult = FALSE;
 		DWORD dwLastError = 0;
@@ -265,7 +265,7 @@ namespace ChromaSDK
 		return bResult;
 	}
 
-	BOOL VerifyLibrarySignature::IsFileVersionSameOrNewer(const std::wstring& filename, const int minMajor, const int minMinor, const int minRevision, const int minBuild)
+	bool VerifyLibrarySignature::IsFileVersionSameOrNewer(const std::wstring& filename, const int minMajor, const int minMinor, const int minRevision, const int minBuild)
 	{
 		/*
 		std::filesystem::path p = filename.c_str();

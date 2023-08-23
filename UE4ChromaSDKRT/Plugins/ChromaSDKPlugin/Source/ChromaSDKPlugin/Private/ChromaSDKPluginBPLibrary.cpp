@@ -6065,7 +6065,7 @@ RZRESULT UChromaSDKPluginBPLibrary::SetEffectCustom1D_BGR(EChromaSDKDevice1DEnum
 	break;
 	default:
 		//LogError("SetEffectCustom1D_BGR Unsupported device used!\r\n");
-		return RZRESULT_FAILED;
+		return (ULONG)RZRESULT_FAILED;
 	}
 	return result;
 #else
@@ -6134,7 +6134,7 @@ RZRESULT UChromaSDKPluginBPLibrary::SetEffectCustom2D_BGR(EChromaSDKDevice2DEnum
 	break;
 	default:
 		//LogError("SetEffectCustom2D_BGR Unsupported device used!\r\n");
-		return RZRESULT_FAILED;
+		return (ULONG)RZRESULT_FAILED;
 	}
 
 	return result;
@@ -6172,7 +6172,7 @@ RZRESULT UChromaSDKPluginBPLibrary::SetCustomColorFlag2D_BGR(EChromaSDKDevice2DE
 		}
 		break;
 	default:
-		return RZRESULT_FAILED;
+		return (ULONG)RZRESULT_FAILED;
 	}
 
 	return RZRESULT_SUCCESS;
@@ -6259,7 +6259,7 @@ RZRESULT UChromaSDKPluginBPLibrary::SetEffectKeyboardCustom2D_BGR(EChromaSDKDevi
 	}
 	break;
 	default:
-		return RZRESULT_FAILED;
+		return (ULONG)RZRESULT_FAILED;
 	}
 
 	return result;
