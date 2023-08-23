@@ -2,9 +2,7 @@
 
 * Note: Visit the [Chroma Animation Guide](https://chroma.razer.com/ChromaGuide/) to find the latest supported plugin for Chroma RGB.
 
-* Note: This repository is in progress upgrading from UE4 to UE5.
-
-* Note: This is the (NOT yet the) current Chroma SDK supported plugin for UE5.
+* Note: This is the current Chroma SDK supported plugin for UE5.
 
 * Note: This version includes Unicode support for paths with special characters.
 
@@ -33,7 +31,7 @@
 
 * [CChromaEditor](https://github.com/RazerOfficial/CChromaEditor) - C++ native MFC library for playing and editing Chroma animations
 
-* [UE4_XDK_SampleApp](https://github.com/razerofficial/UE4_XDK_SampleApp) - UE4 Chroma samples and runtime module with Blueprint library for the ChromaSDK
+* [UE5_XDK_SampleApp](https://github.com/razerofficial/UE5_XDK_SampleApp) - UE5 Chroma samples and runtime module with Blueprint library for the ChromaSDK
 
 ## Quick Start ##
 
