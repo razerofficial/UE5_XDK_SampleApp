@@ -9,9 +9,7 @@
 DEFINE_LOG_CATEGORY(LogChromaSampleAppButton);
 
 
-using namespace std;
-
-mutex USampleAppButton::_sMutex;
+std::mutex USampleAppButton::_sMutex;
 
 //USampleAppButton::USampleAppButton(const class FPostConstructInitializeProperties& PCIP) //___HACK_UE4_VERSION_4_8_OR_LESS
 //	: Super(PCIP) //___HACK_UE4_VERSION_4_8_OR_LESS
@@ -29,7 +27,7 @@ void USampleAppButton::HandleClick()
 		return;
 	}
 
-	lock_guard<mutex> guard(_sMutex);
+    std::lock_guard<std::mutex> guard(_sMutex);
 
     if (Name.Compare("Button_Effect1") == 0)
     {

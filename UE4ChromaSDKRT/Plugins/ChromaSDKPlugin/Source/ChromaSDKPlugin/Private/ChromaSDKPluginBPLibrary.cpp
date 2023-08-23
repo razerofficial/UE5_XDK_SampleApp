@@ -17,7 +17,6 @@ DEFINE_LOG_CATEGORY(LogChromaBlueprintLibrary);
 
 
 using namespace ChromaSDK;
-using namespace std;
 
 // fkey map
 std::map<FKey, EChromaSDKKeyboardKey::Type> UChromaSDKPluginBPLibrary::_sKeyboardFKeyMap =
@@ -675,16 +674,16 @@ int32 UChromaSDKPluginBPLibrary::ChromaSDKInitSDK(const FChromaSDKAppInfoType& a
 	{
 		ChromaSDK::APPINFOTYPE coreAppInfo = {};
 
-		wstring title = TCHAR_TO_WCHAR(*appInfo.Title);
+		std::wstring title = TCHAR_TO_WCHAR(*appInfo.Title);
 		_tcscpy_s(coreAppInfo.Title, 256, title.c_str());
 
-		wstring desc = TCHAR_TO_WCHAR(*appInfo.Description);
+		std::wstring desc = TCHAR_TO_WCHAR(*appInfo.Description);
 		_tcscpy_s(coreAppInfo.Description, 1024, desc.c_str());
 
-		wstring name = TCHAR_TO_WCHAR(*appInfo.Author_Name);
+		std::wstring name = TCHAR_TO_WCHAR(*appInfo.Author_Name);
 		_tcscpy_s(coreAppInfo.Author.Name, 256, name.c_str());
 
-		wstring contact = TCHAR_TO_WCHAR(*appInfo.Author_Contact);
+		std::wstring contact = TCHAR_TO_WCHAR(*appInfo.Author_Contact);
 		_tcscpy_s(coreAppInfo.Author.Contact, 256, contact.c_str());
 
 		//appInfo.SupportedDevice = 

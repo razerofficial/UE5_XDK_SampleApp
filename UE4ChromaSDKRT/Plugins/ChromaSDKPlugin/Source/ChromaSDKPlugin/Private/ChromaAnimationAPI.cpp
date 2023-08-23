@@ -25,7 +25,6 @@ DEFINE_LOG_CATEGORY(LogChromaAnimationAPI);
 
 
 using namespace ChromaSDK;
-using namespace std;
 
 HMODULE ChromaAnimationAPI::_sLibrary = nullptr;
 bool ChromaAnimationAPI::_sInvalidSignature = false;
@@ -582,7 +581,7 @@ CHROMASDK_DECLARE_METHOD_IMPL(PLUGIN_USE_PRELOADING_NAME, UsePreloadingName);
 #define CHROMASDK_VALIDATE_METHOD(Signature, FieldName) FieldName = reinterpret_cast<Signature>(reinterpret_cast<void*>(GetProcAddress(library, "Plugin" #FieldName))); \
 if (FieldName == nullptr) \
 { \
-	cerr << "Failed to find method: " << ("Plugin" #FieldName) << endl; \
+	std::cerr << "Failed to find method: " << ("Plugin" #FieldName) << std::endl; \
     return -1; \
 }
 

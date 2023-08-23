@@ -24,8 +24,6 @@
 #pragma comment(lib, "ShLwApi")
 #pragma comment(lib, "version")
 
-using namespace std;
-
 namespace ChromaSDK
 {
 
