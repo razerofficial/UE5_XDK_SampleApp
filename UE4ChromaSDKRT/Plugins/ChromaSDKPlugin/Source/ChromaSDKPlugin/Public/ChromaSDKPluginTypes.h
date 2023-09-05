@@ -171,7 +171,7 @@ namespace EChromaSDKKeyboardKey
 		KK_OEM_9                         UMETA(DisplayName = ", (comma) (VK_OEM_COMMA)"),
 		KK_OEM_10                        UMETA(DisplayName = ". (period) (VK_OEM_PERIOD)"),
 		KK_OEM_11                        UMETA(DisplayName = "/ (forward slash) (VK_OEM_2)"),
-		KK_EUR_1                         UMETA(DisplayName = ""#" (VK_OEM_5)"),
+		KK_EUR_1                         UMETA(DisplayName = "# (VK_OEM_5)"),
 		KK_EUR_2                         UMETA(DisplayName = "\ (VK_OEM_102)"),
 		KK_JPN_1                         UMETA(DisplayName = "¥ (0xFF)"),
 		KK_JPN_2                         UMETA(DisplayName = "\ (0xC1)"),

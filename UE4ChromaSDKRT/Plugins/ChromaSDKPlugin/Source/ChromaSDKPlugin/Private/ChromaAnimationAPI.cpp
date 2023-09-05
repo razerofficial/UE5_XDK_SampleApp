@@ -1,6 +1,6 @@
 #include "ChromaAnimationAPI.h"
 #include "ChromaLogger.h"
-#if !PLATFORM_XBOXONE
+#if !defined(PLATFORM_XBOXONE) || !PLATFORM_XBOXONE
 #include "VerifyLibrarySignature.h"
 #endif
 #include <iostream>
@@ -10,7 +10,7 @@
 DEFINE_LOG_CATEGORY(LogChromaAnimationAPI);
 
 
-#if PLATFORM_XBOXONE
+#if defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE
 #define CHROMA_EDITOR_DLL	L"CChromaEditorLibrary64.dll"
 #else
 
@@ -600,7 +600,7 @@ int ChromaAnimationAPI::InitAPI()
 
 		std::wstring path;
 
-#if PLATFORM_XBOXONE
+#if defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE
 	path = CHROMA_EDITOR_DLL;
 #else
 
@@ -644,7 +644,7 @@ int ChromaAnimationAPI::InitAPI()
 
 	#endif
 
-#if PLATFORM_XBOXONE
+#if defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE
 	//UE_LOG(LogChromaAnimationAPI, Log, TEXT("Load CChromaEditorLibrary64 at: %s"), *FString(path.c_str()));
 #endif
 

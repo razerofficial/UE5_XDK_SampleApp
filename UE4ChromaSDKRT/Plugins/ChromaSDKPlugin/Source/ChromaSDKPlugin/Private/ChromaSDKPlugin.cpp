@@ -25,7 +25,7 @@ IMPLEMENT_MODULE( FChromaSDKPlugin, ChromaSDKPlugin )
 
 void FChromaSDKPlugin::StartupModule()
 {
-#if PLATFORM_XBOXONE
+#if defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE
 	//UE_LOG(LogChromaPlugin, Log, TEXT("FChromaSDKPlugin::StartupModule()"));
 #endif
 
@@ -39,7 +39,7 @@ void FChromaSDKPlugin::StartupModule()
 
 void FChromaSDKPlugin::ShutdownModule()
 {
-#if PLATFORM_XBOXONE
+#if defined(PLATFORM_XBOXONE) && PLATFORM_XBOXONE
 	//UE_LOG(LogChromaPlugin, Log, TEXT("FChromaSDKPlugin::ShutdownModule()"));
 #endif
 
